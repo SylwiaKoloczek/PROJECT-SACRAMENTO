@@ -28,10 +28,10 @@ function change_sound_color() {
 $(function() {
 
     //dlaczego to nie działa na jquery?
-    const yourAudio = document.getElementById('yourAudio'),
-        ctrl = document.getElementById('audioControl');
+    const yourAudio = $('#yourAudio')[0],
+        ctrl = $('#audioControl');
 
-    ctrl.onclick = function () {
+    ctrl.on('click', function () {
 
         // Update the Button
         const pause = ctrl.innerHTML === 'Pause music...';
@@ -43,7 +43,7 @@ $(function() {
 
         // Prevent Default Action
         return false;
-    };
+    });
 
     $('h1').on("click",function () {
         $("#audioControl").addClass('animation');
