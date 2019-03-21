@@ -26,12 +26,10 @@ function change_sound_color() {
     else if (loose.css("display")==="flex") audio_btn.css("color", " #A89247");
 }
 $(function() {
-
-    //dlaczego to nie działa na jquery?
     const yourAudio = $('#yourAudio')[0],
         ctrl = $('#audioControl');
 
-    ctrl.on('click', function () {
+        ctrl.on('click', function () {
 
         // Update the Button
         const pause = ctrl.innerHTML === 'Pause music...';
