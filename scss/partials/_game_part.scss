@@ -1,0 +1,79 @@
+.game_part{
+  display: none;
+  background: #F8F9FE;
+  background: -webkit-linear-gradient(bottom, #F8F9FE, #F9FAFF);
+  background: -moz-linear-gradient(bottom, #F8F9FE, #F9FAFF);
+  background: linear-gradient(to top, #F8F9FE, #F9FAFF);
+  position: relative;
+  h1{
+    position: absolute;
+    top: 0.5em;
+    left: 0.4em;
+    font-size: 6em;
+    color:  #9DBCDB;
+    cursor: pointer;
+  }
+  .board{
+    position: absolute;
+    top: 0;
+    right: 2em;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .card_style{
+      border: 2px dashed #F0C894;
+      border-radius: 50%;
+      height:10em;
+      width: 10em;
+      background-image: url("../images2/bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      filter: brightness(100%); //jasność karty
+      transition: all .3s ease-in-out;
+    }
+    .card_style:hover{
+      border: 2px dashed #DBE9F9;
+      filter: brightness(100%);
+    }
+    .clicked_card{
+      border: 2px dashed #DBE9F9;
+      border-radius: 50%;
+      height:10em;
+      width: 10em;
+      background-image: url("../images2/bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: default;
+      filter: brightness(100%); //jasność karty
+      transition: all .3s ease-in-out;
+    }
+  }
+  .win{
+    display: none;
+  }
+  .loose{
+    display: none;
+  }
+
+  .timer{
+    position: absolute;
+    display: flex;
+    top: 13em;
+    left: 4em;
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    border: 2px dashed #F0C894;
+    justify-content: center;
+    align-items: center;
+    p{
+      text-align: center;
+      font-size: 4em;
+      color:  #9DBCDB;
+    }
+  }
+}

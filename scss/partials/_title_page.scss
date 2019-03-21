@@ -1,0 +1,43 @@
+button{
+  display: block;
+  font-size: 8em;
+  font-weight: 500;
+  color: #F24443;
+  cursor: pointer;
+  animation-name: title_appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  .title_page{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E2DCDC;
+    .left_side{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1{
+        position: relative;
+      }
+      p{
+        font-size: .2em;
+        font-weight: 800;
+        position: absolute;
+        bottom: .8em;
+        right: 1em;
+      }
+    }
+    .right_side{
+      height: 100%;
+      width: 50%;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+

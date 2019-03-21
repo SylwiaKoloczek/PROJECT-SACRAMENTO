@@ -1,0 +1,78 @@
+@import "partials/_reset";
+
+@font-face {
+  font-family: 'sacramentoregular';
+  src: url('../fonts/webfontkit-20190222-140029/sacramento-regular-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20190222-140029/sacramento-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//wspólne właściwości dla całej strony
+*{
+  box-sizing: border-box;
+  font-family: 'sacramentoregular', sans-serif;
+  font-weight: normal;
+}
+body {
+  position: relative;
+  .main_width{
+    width: 100vw;
+    height: 100vh;
+  }
+
+//stylowanie przycisku dźwięku
+  #audioControl{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    z-index: 1;
+    font-size: 2em;
+    color: #F24443;
+    text-decoration: none;
+  }
+}
+
+//animacje do wyłaniania i znikania podstron
+@keyframes title_appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.animation{
+  animation-name: title_appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes title_disappear {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.animation_fade{
+  animation-name: title_disappear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+//import plików scss
+@import "partials/_title_page";
+@import "partials/main_menu";
+@import "partials/_about";
+@import "partials/_prices";
+@import "partials/_find";
+@import "partials/_gallery";
+@import "partials/_flavours";
+@import "partials/_extras";
+@import "partials/_game_part";
+@import "partials/_win";
+@import "partials/_loose";

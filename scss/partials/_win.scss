@@ -1,0 +1,123 @@
+.win{
+  display: none;
+  position: relative;
+  justify-content: flex-start;
+  background: #F1EDEA;
+  background: -webkit-linear-gradient(top, #F1EDEA, #F0F0EE);
+  background: -moz-linear-gradient(top, #F1EDEA, #F0F0EE);
+  background: linear-gradient(to bottom, #F1EDEA, #F0F0EE);
+  h1{
+    position: absolute;
+    z-index:2;
+    font-size: 3em;
+    top:.5em;
+    left:.5em;
+    color: #A89247;
+    cursor: pointer;
+  }
+  .picture{
+    top: 0;
+    left: 0;
+    img{
+      height: 100vh;
+    }
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    font-size: 3em;
+    text-align: center;
+    h3{
+      font-size: 2em;
+      padding-top: 1em;
+      color: #C14E6D;
+    }
+    p{
+      padding-top: 1em;
+      padding-bottom: 1em;
+      color: #E79AAA;
+    }
+    input{
+      border-radius: 20%;
+      border: 2px dashed #A89247;
+      background-color: #EFEEEA;
+      text-align: center;
+      font-family: inherit;
+      color: #C14E6D;
+      position: relative;
+      line-height: .5em;
+      font-size: .5em;
+      position: relative;
+    }
+    ::placeholder{
+      color: #C14E6D;
+      text-align: center;
+      opacity: .2;
+      font-size: .8em;
+    }
+    input:focus{
+      outline: none;
+    }
+    #send{
+        color: #A89247;
+        cursor: pointer;
+        font-size: 1em;
+        border: none;
+        background-color: transparent;
+    }
+  }
+  .good_data{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size: 4em;
+      text-align: center;
+      color: #E79AAA;
+    }
+  }
+  .wrong_data,
+  .cheater{
+    display: none;
+    .bubble{
+      position: absolute;
+      border: 2px dashed #A89247;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .bubble_big{
+      height: 20em;
+      width: 20em;
+      left: 25em;
+      bottom: 3em;
+      p{
+        color: #C14E6D;
+        font-size: 2.5em;
+        text-align: center;
+      }
+      .bubble_medium{
+        height: 6em;
+        width: 6em;
+        top: -1em;
+        right: -4em;
+        .bubble_small{
+          height: 3em;
+          width: 3em;
+          top: -1em;
+          right: -3em;
+          .bubble_xs{
+            height: 1em;
+            width: 1em;
+            top: 0em;
+            right: -1.5em;
+          }
+        }
+      }
+    }
+  }
+}

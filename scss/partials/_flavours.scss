@@ -1,0 +1,74 @@
+.flavours{
+  display: none;
+  position: relative;
+  color: #E27491;
+  background: #F7F9F8;
+  background: -webkit-linear-gradient(top, #F7F9F8, #F5F7F6);
+  background: -moz-linear-gradient(top, #F7F9F8, #F5F7F6);
+  background: linear-gradient(to bottom, #F7F9F8, #F5F7F6);
+  h1{
+    position: absolute;
+    top: .4em;
+    left:.5em;
+    font-size: 5em;
+    cursor: pointer;
+  }
+  .picture{
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      height: 100vh;
+    }
+  }
+    .today{
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20em;
+      height: 20em;
+      border-radius: 50%;
+      border: 2px dashed #C1A47C;
+      top: 11em;
+      left: 7em;
+      #todays_flavours{
+        font-size: 3em;
+        color: #E4BABB;
+      }
+      .todays_flavours_elements{
+        display: none;
+
+        p{
+          font-size: 2em;
+          color: #C2A77C;
+        }
+      }
+    }
+    .everyday{
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20em;
+      height: 20em;
+      border-radius: 50%;
+      border: 2px dashed #C1A47C;
+      top: 25em;
+      left: 25em;
+      #everyday_flavours{
+        font-size: 3em;
+        color: #E4BABB;
+      }
+      .everyday_flavours_elements{
+        display: none;
+        p{
+          font-size: 2.5em;
+          color: #C2A77C;
+        }
+      }
+    }
+  }
+

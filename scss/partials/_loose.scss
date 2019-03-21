@@ -1,0 +1,42 @@
+.loose{
+  display: none;
+  position: relative;
+  justify-content: flex-start;
+  background: #F1EDEA;
+  background: -webkit-linear-gradient(top, #F1EDEA, #F0F0EE);
+  background: -moz-linear-gradient(top, #F1EDEA, #F0F0EE);
+  background: linear-gradient(to bottom, #F1EDEA, #F0F0EE);
+  h1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 3em;
+    top: .5em;
+    left: .5em;
+    color: #A89247;
+    cursor: pointer;
+  }
+  .picture {
+    top: 0;
+    left: 0;
+    img {
+      height: 100vh;
+    }
+  }
+  .feedback{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+      font-size: 6em;
+      padding-bottom: .3em;
+      color: #C14E6D;
+    }
+    p{
+      font-size: 3.4em;
+      text-align: center;
+      color: #E79AAA;
+    }
+  }
+}

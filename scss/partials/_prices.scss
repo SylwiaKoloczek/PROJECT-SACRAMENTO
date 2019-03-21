@@ -1,0 +1,69 @@
+.prices_opening_hours{
+  position: relative;
+  display: none;
+  background: #E0E0E0;
+  background: -webkit-linear-gradient(top, #E0E0E0, #CCCCCC);
+  background: -moz-linear-gradient(top, #E0E0E0, #CCCCCC);
+  background: linear-gradient(to bottom, #E0E0E0, #CCCCCC);
+  color: #A1AF73; //zielony
+  h1{
+    cursor: pointer;
+    position: absolute;
+    font-size: 3em;
+    top: 0.5em;
+    left: 0.5em;
+  }
+  .picture {
+    img {
+      height: 100vh;
+    }
+  }
+  .pricesAndHours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .prices, .opening_hours{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .display_type{
+        display: flex;
+        .price_price,
+        .opening_hours_hours{
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+    }
+    .prices{
+      padding-bottom: 5em;
+      .price_tag{
+        align-self: center;
+        h3{
+          font-size: 4em;
+        }
+      }
+      .prices_box{
+        justify-content: space-between;
+        padding: 0 5em;
+        font-size: 2em;
+      }
+    }
+    .opening_hours{
+      .opening_hours_tag{
+        align-self: center;
+        padding-bottom: 1em;
+        h3{
+          font-size: 4em;
+        }
+      }
+      .opening_hours_box{
+        font-size: 2em;
+        padding: 0 1.5em;
+        justify-content: space-between;
+      }
+    }
+  }
+}

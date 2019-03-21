@@ -1,0 +1,108 @@
+.main_menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: relative;
+  background: #ededef; /* Old browsers */
+  background: -moz-linear-gradient(top, #ededef 0%, #f0f1f3 19%, #f4f4f6 23%, #f2f2f4 23%, #f4f4f6 24%, #f3f4f6 30%, #f5f6f8 30%, #f3f4f6 33%, #f5f6f8 34%, #f6f7f9 39%, #f5f6f8 45%, #f7f8fa 46%, #f9fafc 63%, #fbfcfe 63%, #f9fafc 65%, #fafbfd 78%, #fcfdff 78%, #fbfcfe 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ededef 0%, #f0f1f3 19%, #f4f4f6 23%, #f2f2f4 23%, #f4f4f6 24%, #f3f4f6 30%, #f5f6f8 30%, #f3f4f6 33%, #f5f6f8 34%, #f6f7f9 39%, #f5f6f8 45%, #f7f8fa 46%, #f9fafc 63%, #fbfcfe 63%, #f9fafc 65%, #fafbfd 78%, #fcfdff 78%, #fbfcfe 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ededef 0%, #f0f1f3 19%, #f4f4f6 23%, #f2f2f4 23%, #f4f4f6 24%, #f3f4f6 30%, #f5f6f8 30%, #f3f4f6 33%, #f5f6f8 34%, #f6f7f9 39%, #f5f6f8 45%, #f7f8fa 46%, #f9fafc 63%, #fbfcfe 63%, #f9fafc 65%, #fafbfd 78%, #fcfdff 78%, #fbfcfe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  h1 {
+    color: #E4B5C7;
+    font-size: 8em;
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    cursor: pointer;
+  }
+  .picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    img {
+      background-blend-mode: multiply;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .main_circles{
+    position: absolute;
+    border: 2px dashed #B6B968;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    p{
+      color: #E4B5C7;
+    }
+  }
+  .about_us_circle{
+    width: 15em;
+    height: 15em;
+    bottom: 6em;
+    left: 2em;
+    p{
+      font-size: 3.5em;
+    }
+  }
+  .prices_circle{
+    width: 12em;
+    height: 12em;
+    bottom: 22em;
+    left: 2em;
+    p{
+      font-size: 2.5em;
+    }
+  }
+  .flavours_circle{
+    width: 17em;
+    height: 17em;
+    bottom: 4em;
+    left: 19em;
+    p{
+      font-size: 3.5em;
+    }
+  }
+  .find_circle{
+    width: 10em;
+    height: 10em;
+    bottom: 20em;
+    left: 15em;
+    p{
+      font-size: 2em;
+    }
+  }
+  .hours_circle {
+    width: 14em;
+    height: 14em;
+    bottom: 22em;
+    left: 26em;
+    p {
+      font-size: 2.5em;
+    }
+  }
+  .gallery_circle {
+    width: 12em;
+    height: 12em;
+    bottom: 5em;
+    left: 38em;
+    p {
+      font-size: 2.5em;
+    }
+  }
+  .extras_circle {
+    width: 9em;
+    height: 9em;
+    bottom: 18em;
+    left: 39em;
+    p {
+      font-size: 2em;
+    }
+  }
+}
+
+
+

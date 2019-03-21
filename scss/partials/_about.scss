@@ -1,0 +1,40 @@
+.about{
+  display: none;
+  position: relative;
+  background: #D0DEEE;
+  background: -webkit-linear-gradient(bottom, #D0DEEE, #F2F5FB);
+  background: -moz-linear-gradient(bottom, #D0DEEE, #F2F5FB);
+  background: linear-gradient(to top, #D0DEEE, #F2F5FB);
+  h1{
+    position: absolute;
+    cursor: pointer;
+    font-size: 3em;
+    left: .5em;
+    top: .5em;
+    color: #535D8F; //fiolet
+  }
+  .picture {
+    img {
+      height: 100vh;
+    }
+  }
+  .about_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+      white-space: nowrap;
+      font-size: 5em;
+      padding: 0 2.5em 0 1em;
+      color: #535D8F; //fiolet
+    }
+    p{
+      font-size: 2em;
+      text-align: center;
+      padding: 1em 4em 0 1em;
+      line-height: 1.2em;
+      color: #535D8F; //fiolet
+    }
+  }
+}

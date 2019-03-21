@@ -1,0 +1,74 @@
+.find_us{
+  display: none;
+  background: #F3F4F6;
+  background: -webkit-linear-gradient(bottom, #F3F4F6, #F8F8F8);
+  background: -moz-linear-gradient(bottom, #F3F4F6, #F8F8F8);
+  background: linear-gradient(to top, #F3F4F6, #F8F8F8);
+  h1{
+    cursor: pointer;
+    position: relative;
+    font-size: 7em;
+    top: .4em;
+    left: .5em;
+    color: #EABF92;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .find_us_display{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #EABF92;
+    border-radius: 50%;
+  }
+  .insta{
+    width: 15em;
+    height: 15em;
+    bottom: 9em;
+    left: 37em;
+  }
+  .fb{
+    width: 20em;
+    height: 20em;
+    bottom: 3em;
+    left: 13em;
+  }
+    .phone{
+      width: 17em;
+      height: 17em;
+      bottom: 23em;
+      left: 24em;
+      #phone_number{
+        position: absolute;
+        color: #D1A975;
+        display: none;
+        font-size: 1.5em;
+      }
+    }
+  .e-mail{
+    width: 14em;
+    height: 14em;
+    bottom: 23em;
+    left: 8em;
+    #e-mail_address{
+      position: absolute;
+      color: #D1A975;
+      display: none;
+      font-size: 2.5em;
+    }
+  }
+  .adress{
+    width: 10em;
+    height: 10em;;
+    bottom: 26em;
+    left:44em;
+  }
+  i{
+    color: #C1A9CD;
+  }
+}
